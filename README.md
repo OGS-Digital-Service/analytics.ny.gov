@@ -1,2 +1,2 @@
 # analytics.ny.gov
-Consolidated analytics dashboard for NYS websites.
+Consolidated analytics dashboards for NYS websites.
