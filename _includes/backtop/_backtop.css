@@ -1,0 +1,44 @@
+/* back to top - NYSDS JHK */
+
+.back-to-top {
+    position: fixed;
+    bottom: 6%;
+    right: 5%;
+    z-index: 23000;
+}
+
+.back-to-top-button {
+    font-size: 0.9em;
+    background-color: #154973;
+    padding: 13px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.back-to-top-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #face00;
+    text-decoration: underline;
+}
+
+.back-to-top-button:focus {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #face00;
+    text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+    .back-to-top {
+        bottom: 7%;
+        right: 4%;
+    }
+    .back-to-top-button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
