@@ -4,5 +4,13 @@ title: NYS Digital Service Analytics Hub
 description: Selected analytics reports across new york state websites
 url:
 ---
+{% from './_includes/_components.njk' import iframeLoader %}
 <h1> {{title}} </h1>
-<p> Test content only, please disregard for now </p>
+
+
+{{
+    iframeLoader({
+        url:"https://lookerstudio.google.com/embed/reporting/232b4b43-8acc-45f4-9ad2-0e856e25aa7b/page/xz48E",
+        title:""
+    })
+}}

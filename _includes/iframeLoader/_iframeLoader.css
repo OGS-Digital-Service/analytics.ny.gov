@@ -1,0 +1,19 @@
+
+.nysds-iframe {
+  width: 90%;
+  height: 800px;
+}
+
+.nysds-iframe-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+/* breakpoiiiint */
+@media (min-width: 1280px) {
+  .nysds-iframe {
+    width: 80%;
+    height: 1000px;
+  }
+}
