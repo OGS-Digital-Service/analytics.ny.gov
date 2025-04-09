@@ -2,11 +2,11 @@
 layout: layout.njk
 title: NYS Digital Service Analytics Hub
 description: Selected analytics reports across new york state websites
-url:
+data: _overview
 ---
 {% from './_includes/_components.njk' import iframeLoader, card, stats with context %}
 <h1> {{title}} </h1>
-{{
+{# {{
     card({
         heading:"Cards",
         intro:"some text",
@@ -20,22 +20,19 @@ url:
             }
         ]
     })
-}}
+}} #}
 
 {{
     stats({
-        heading:"stats",
-        intro:"intro text",
+        data: true,
+        dataSource: _overview,
+        heading:"Total Users",
+        intro:"",
         ctalink:"",
         ctatext:"",
-        cards:[
-            {
-                icon:'',
-                stat:"87%",
-                description:"of something",
-                color:"blue"
-            }
-        ]
+        color:"gray",
+        cards:""
+        
 
     })
 }}

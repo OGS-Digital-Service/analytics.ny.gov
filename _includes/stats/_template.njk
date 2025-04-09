@@ -1,3 +1,54 @@
+{% if params.data === true %}
+{%set statsData = params.dataSource %} {# this sets the stats data loop to the datasource set in the component#}
+<div class="stats">
+    {% if params.heading %}
+    <h3 class="stats-heading
+        {% if params.subhead === true %} stats-subhead {% endif %} 
+    "> {{params.heading}}</h3>
+    {% endif %}
+    <p class="stats-intro">{{params.intro}} </p>
+    <ul class="stats-list">
+        
+        {% for data in statsData %}
+            <li class="stats-card 
+                        {% if params.color === "blue" %} stats-blue {% endif %} 
+                        {% if params.color === "gray" %} stats-gray {% endif %} 
+                        ">
+                <div class="stats-icon
+                        {% if params.color === "blue" %} stats-blue {% endif %} 
+                        {% if params.color === "gray" %} stats-gray {% endif %} 
+                        ">
+                    {{data.icon | safe }}
+                </div>
+                {% if data.category %}
+                <h4 class="stats-the
+                        {% if params.color === "blue" %} stats-the-blue {% endif %} 
+                        {% if params.color === "gray" %} stats-the-gray {% endif %} 
+                        ">
+                    {{data.users}}
+                </h4>
+                {% endif %}
+                <p class="stats-description">
+                    {{data.category}}
+                </p>
+                
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% if params.outro %}
+    <p class="stats-outro">{{params.outro | safe}}</p>
+    {% endif %}
+
+    {% if params.ctatext %}
+    <a href="{{params.ctalink}}" class="stats-cta"> {{params.ctatext}} </a>
+    {% endif %}
+
+</div>
+
+
+
+{% else %}
 <div class="stats">
     {% if params.heading %}
     <h3 class="stats-heading
@@ -42,3 +93,6 @@
     {% endif %}
 
 </div>
+{% endif %}
+
+
