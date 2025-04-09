@@ -76,7 +76,7 @@
 }
 
 /* media queries */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .category-tile {
         flex: 1;
         width: 25%;

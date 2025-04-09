@@ -89,7 +89,7 @@
     rotate: 180deg;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .nysds-hero-information {
         margin-top: 0px;
         margin: 0px 60px;

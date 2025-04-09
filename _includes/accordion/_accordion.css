@@ -210,7 +210,7 @@
 
 
 /* media queries */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
    .accordion-item {
         flex-direction: row;
         margin-bottom: -30px;

@@ -80,7 +80,7 @@
 
 
 /* media queries */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .cards-wrapper {
         display: flex;
         flex-direction: row;

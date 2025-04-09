@@ -4,5 +4,38 @@ title: NYS Digital Service Analytics Hub
 description: Selected analytics reports across new york state websites
 url:
 ---
-{% from './_includes/_components.njk' import iframeLoader %}
+{% from './_includes/_components.njk' import iframeLoader, card, stats with context %}
 <h1> {{title}} </h1>
+{{
+    card({
+        heading:"Cards",
+        intro:"some text",
+        cards:[
+            {
+                title:"Card title",
+                content:"some content",
+                link:"#",
+                image:"",
+                imagealt:""
+            }
+        ]
+    })
+}}
+
+{{
+    stats({
+        heading:"stats",
+        intro:"intro text",
+        ctalink:"",
+        ctatext:"",
+        cards:[
+            {
+                icon:'',
+                stat:"87%",
+                description:"of something",
+                color:"blue"
+            }
+        ]
+
+    })
+}}

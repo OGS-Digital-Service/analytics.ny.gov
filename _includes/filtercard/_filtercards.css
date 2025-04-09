@@ -113,7 +113,7 @@
     background-color: #ededed;
 }
 /* media queries */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     /* filtercard */
     .filtercards {
         margin: 0 auto;
