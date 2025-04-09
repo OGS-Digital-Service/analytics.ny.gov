@@ -108,7 +108,7 @@
 .nysds-global-site-name {
   font-size: 1rem;
   text-transform: uppercase;
-  margin: 20px;
+  margin: 20px 35px;
 }
 
 .nysds-global-home-link {
@@ -226,7 +226,7 @@
 
 
 /* breakpoiiiint */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .nysds-global-nav {
     justify-content: initial;
     flex-direction: row;
