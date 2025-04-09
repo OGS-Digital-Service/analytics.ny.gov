@@ -6,6 +6,7 @@ data: _overview
 ---
 {% from './_includes/_components.njk' import iframeLoader, card, stats with context %}
 <h1 class="mx-content"> {{title}} </h1>
+<p class="mx-content">Welcome! This is a work in progress, so please be patient as we update data sources, import addtional components and provide more context for the analytics reports housed here.</p>
 {# {{
     card({
         heading:"Cards",
@@ -26,11 +27,11 @@ data: _overview
     stats({
         data: true,
         dataSource: _overview,
-        heading:"Total Users",
-        intro:"",
+        heading:"Monthly Summary",
+        intro:"Users in the last 30 days.",
         ctalink:"",
         ctatext:"",
-        color:"gray",
+        color:"blue",
         cards:""
         
 
