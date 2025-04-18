@@ -1,7 +1,8 @@
 module.exports = function(eleventyConfig){
     eleventyConfig.setTemplateFormats([
         "md",
-        "njk"
+        "njk",
+        "hbs"
       ]);
 
       eleventyConfig.addPassthroughCopy("img");
