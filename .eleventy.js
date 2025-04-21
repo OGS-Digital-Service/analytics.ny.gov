@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig){
+    const handlebarsPlugin = require("@11ty/eleventy-plugin-handlebars");
     eleventyConfig.setTemplateFormats([
         "md",
         "njk",
@@ -9,7 +10,7 @@ module.exports = function(eleventyConfig){
       eleventyConfig.addPassthroughCopy("fonts");
       eleventyConfig.addPassthroughCopy("js");
       eleventyConfig.addPassthroughCopy("css");
-    
+      eleventyConfig.addPlugin(handlebarsPlugin);
 
     return {
         markdownTemplateEngine: "njk",    
@@ -18,5 +19,8 @@ module.exports = function(eleventyConfig){
         output: "_site"
     }
     }
+
    
 };
+
+

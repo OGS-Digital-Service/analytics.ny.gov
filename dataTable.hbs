@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+title: NYS Digital Service Analytics Hub
+description: Selected analytics reports across new york state websites
+data: _overview
+---
+{{> _dataTable data="_overview"}}
+
+<ul>
+   {{#each _overview as |point|}}
+   <li>{{point.category}} {{point.users}}</li>
+   {{/each}}
+</ul>
