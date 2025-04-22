@@ -14,11 +14,24 @@
                         {% if params.color === "blue" %} stats-blue {% endif %} 
                         {% if params.color === "gray" %} stats-gray {% endif %} 
                         ">
-                <div class="stats-icon
+                <div class="stats-icon-percent
                         {% if params.color === "blue" %} stats-blue {% endif %} 
                         {% if params.color === "gray" %} stats-gray {% endif %} 
                         ">
-                    {{data.icon | safe }}
+                    {% if data.up === "TRUE" %}
+                        <span class="nysds-font-lg stats-green"><i class="fas fa-arrow-up"></i></span>
+                        <span class="nysds-font-xl nysds-font-bold">  {{data.percent}} </span>
+                        <span class="nysds-font-md"> <i class="fas fa-percent"></i> </span>
+       
+                    {% else %}
+                        <span class=" nysds-font-lg stats-red"><i class="fas fa-arrow-down"></i></span>
+                        <span class="nysds-font-xl nysds-font-bold"> {{data.percent}} </span>
+                        <span class="nysds-font-md"><i class="fas fa-percent"></i></span>
+                        
+                    {% endif %}
+
+
+
                 </div>
                 {% if data.category %}
                 <h4 class="stats-the

@@ -590,6 +590,23 @@
     color: #154973;
 }
 
+.stats-green {
+    color: var(--success-green)
+}
+
+.stats-red {
+    color: var(--dark-red-alert)
+}
+
+.stats-icon-percent {
+    background: var(--mid-gray);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    color: #000;
+
+}
+
 .stats-description {
     font-size: 1em;
     margin: 0px;
@@ -599,6 +616,8 @@
     letter-spacing: 1px;
     font-family: Oswald;
 }
+
+
 
 /* media queries */
 @media (min-width: 1024px) {

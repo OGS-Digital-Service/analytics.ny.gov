@@ -100,6 +100,26 @@
     font-weight: normal;
 }
 
+.nysds-font-xl {
+    font-size: 3em;
+}
+
+.nysds-font-lg {
+    font-size: 2em;
+}
+
+.nysds-font-md {
+    font-size: 1.5em;
+}
+
+.nysds-font-sm {
+    font-size: 0.75em;
+}
+
+.nysds-font-bold {
+    font-weight: bold;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

@@ -1,50 +1,66 @@
 [
-    {
-      "category": "NY.gov",
-      "users": "1,543,394",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Governor",
-      "users": "526,643",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Department of Health",
-      "users": "1,617,505",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Department of Motor Vehicles",
-      "users": "3,304,415",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Department of Labor",
-      "users": "767,756",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Office of Temporary and Disability Assistance",
-      "users": "277,094",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Department of Taxation and Finance",
-      "users": "1,806,576",
-      "Thumbs Up": "",
-      "Thumbs Down": ""
-    },
-    {
-      "category": "Feedback Form",
-      "users": "6,042",
-      "Thumbs Up": 435,
-      "Thumbs Down": "1,127"
-    }
-  ]
+  {
+    "category": "NY.gov",
+    "users": "1,543,394",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "FALSE",
+    "percent": 2
+  },
+  {
+    "category": "Governor",
+    "users": "526,643",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "TRUE",
+    "percent": 11.8
+  },
+  {
+    "category": "Department of Health",
+    "users": "1,617,505",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "TRUE",
+    "percent": 11.8
+  },
+  {
+    "category": "Department of Motor Vehicles",
+    "users": "3,304,415",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "TRUE",
+    "percent": 6
+  },
+  {
+    "category": "Department of Labor",
+    "users": "767,756",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "FALSE",
+    "percent": 10.3
+  },
+  {
+    "category": "Office of Temporary and Disability Assistance",
+    "users": "277,094",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "FALSE",
+    "percent": 7.1
+  },
+  {
+    "category": "Department of Taxation and Finance",
+    "users": "1,806,576",
+    "Thumbs Up": "",
+    "Thumbs Down": "",
+    "up": "TRUE",
+    "percent": 42.4
+  },
+  {
+    "category": "Feedback Form",
+    "users": "6,042",
+    "Thumbs Up": 435,
+    "Thumbs Down": "1,127",
+    "up": "",
+    "percent": ""
+  }
+]
