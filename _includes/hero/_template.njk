@@ -1,3 +1,15 @@
+<style>
+.nysds-hero-background-image {
+    {% if params.image %}
+    background-image: url('{{params.image}}');
+    {% else %}
+    background: #457AA5;
+    {% endif %}
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+</style>
 <div class="nysds-hero-container {% if params.image %} nysds-hero-background-image {%endif%}">
     <div class="nysds-hero-information">
         {% if params.date %}
@@ -6,7 +18,7 @@
         {% if params.headline %}
             <p class="nysds-hero-headline">{{params.headline}}</p>
         {%endif %}
-            <h1 class="nysds-hero-title">{{params.title}}</h1>
+            <h2 class="nysds-hero-title">{{params.title}}</h2>
         {% if params.description %}
             <p class="nysds-hero-description">{{params.description }}</p>
         {% endif %}

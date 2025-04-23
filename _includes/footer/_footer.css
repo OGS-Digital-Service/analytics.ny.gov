@@ -1,0 +1,10 @@
+
+.nysds-footer {
+    background: var(--tertiary-core-blue)
+}
+
+
+/* media queries */
+@media (min-width: 1024px) {
+
+}

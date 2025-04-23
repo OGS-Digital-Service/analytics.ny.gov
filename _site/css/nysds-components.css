@@ -670,6 +670,10 @@
     color: #fff;
     padding: 35px 20px;
     background-color: #154973;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .nysds-hero-title {
@@ -748,6 +752,7 @@
         width: 580px;
         padding: 45px 45px;
         border-radius: 30px;
+        min-height: 150px;
     }
 
     .nysds-hero-container {
@@ -775,4 +780,14 @@
     .nysds-hero-links-list li {
         margin-top: 35px;
     }
+}
+
+.nysds-footer {
+    background: var(--tertiary-core-blue)
+}
+
+
+/* media queries */
+@media (min-width: 1024px) {
+
 }
