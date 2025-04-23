@@ -16,18 +16,7 @@
                             {% if params.color === "blue" %} stats-blue {% endif %} 
                             {% if params.color === "gray" %} stats-gray {% endif %} 
                             ">
-                    <div class="stats-icon-percent
-                            {% if params.color === "blue" %} stats-blue {% endif %} 
-                            {% if params.color === "gray" %} stats-gray {% endif %} 
-                            ">
-                        {% if data.change === "up" %}
-                            <span class="nysds-font-lg stats-green"><i class="fas fa-arrow-up"></i></span>
-                            <span class="nysds-font-xl nysds-font-bold">  {{data.percent}} </span>
-                        {% else %}
-                            <span class=" nysds-font-lg stats-red"><i class="fas fa-arrow-down"></i></span>
-                            <span class="nysds-font-xl nysds-font-bold"> {{data.percent}} </span>
-                        {% endif %}
-                    </div>
+                    
                     {% if data.category %}
                     <h4 class="stats-the
                             {% if params.color === "blue" %} stats-the-blue {% endif %} 
@@ -36,10 +25,24 @@
                         {{data.users}}
                     </h4>
                     {% endif %}
+                    
                     <p class="stats-description">
                         {{data.category}}
                     </p>
                     
+                    <div class="stats-icon-percent
+                            {% if params.color === "blue" %} stats-blue {% endif %} 
+                            {% if params.color === "gray" %} stats-gray {% endif %} 
+                            ">
+                        {% if data.change === "up" %}
+                            <span class="nysds-font-md stats-green"><i class="fas fa-arrow-up"></i></span>
+                            <span class="nysds-font-md">  {{data.percent}} <br> <span class="nysds-font-sm nysds-font-italic">vs. previous month</span></span>
+                            
+                        {% else %}
+                            <span class=" nysds-font-md stats-red"><i class="fas fa-arrow-down"></i></span>
+                            <span class="nysds-font-md "> {{data.percent}} <br> <span class="nysds-font-sm nysds-font-italic">vs. previous month</span></span>
+                        {% endif %}
+                    </div>
                 </li>
             {% endfor %}
         </ul>

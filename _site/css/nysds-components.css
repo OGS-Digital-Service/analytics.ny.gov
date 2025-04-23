@@ -576,7 +576,7 @@
 }
 
 .stats-the {
-    font-size: 2.1em;
+    font-size: 2.4em;
     font-weight: bold;
     padding: 10px 0 10px 0;
     margin: 0;
@@ -600,11 +600,23 @@
 }
 
 .stats-icon-percent {
-    background: var(--mid-gray);
     border-radius: 15px;
     margin: 5px;
     padding: 10px;
-    color: #000;
+    color: #fff;
+}
+
+.stats-card-percent {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    min-height: 200px;
 }
 
 .stats-description {
