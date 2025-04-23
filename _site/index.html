@@ -131,7 +131,7 @@
                     >
                     
                         <a href="/critical-state-service-providers" class="nysds-global-link">
-                            CSSP&#39;s
+                            Critical State Service Providers
                         </a>
                     
                 </li>
@@ -142,21 +142,49 @@
                             }"
                     >
                     
-                        <a href="/nys-search" class="nysds-global-link">
-                            NYS Search
-                        </a>
-                    
-                </li>
-            
-                <li class="nysds-global-list-item"
-                    x-data="{
-                                dropdown: false
-                            }"
-                    >
-                    
-                        <a href="/google-search" class="nysds-global-link">
-                            Google Search
-                        </a>
+
+                        
+                        <button class="nysds-global-button nysds-global-link "  
+                            @click="dropdown = ! dropdown"
+                            :aria-expanded="dropdown"
+                            aria-controls="nysds-global-dropdown-menu4"
+                            @click.outside="dropdown=false"
+                            > 
+                            Search 
+                            <span class="nysds-global-caret-icon" :class="! dropdown ? '' : 'nysds-rotate-180'" ></span>
+                        </button>
+                        
+
+                        
+                        <ul class="nysds-global-link-sub-list" 
+                            @keydown.escape.document="dropdown=false"
+                            @focusin.outside="dropdown=false"
+                            x-show="dropdown"
+                            x-cloak 
+                            x-ref="submenu4" 
+                            id="nysds-global-dropdown-menu4"
+                            >
+                        
+                        
+                            <li class="nysds-global-list-child-item">
+                                <a href="/google-search" class="nysds-global-sublink nysds-global-link" 
+                                >
+                                    <span class="nysds-global-turn-arrow-icon" aria-hidden="true"></span>
+                                    Google Search
+                                </a>
+                                
+                            </li>
+                        
+                            <li class="nysds-global-list-child-item">
+                                <a href="/nys-search" class="nysds-global-sublink nysds-global-link" 
+                                >
+                                    <span class="nysds-global-turn-arrow-icon" aria-hidden="true"></span>
+                                    NYS Search
+                                </a>
+                                
+                            </li>
+                        
+                        </ul>
                     
                 </li>
             
@@ -177,8 +205,15 @@
 </nav> 
     <main class="nysds-main" id="main-site-content-for-skiplink" >
     
-<h1 class="mx-content"> NYS Digital Service Analytics Hub </h1>
-<p class="mx-content">Welcome! This is a work in progress, so please be patient as we update data sources, import addtional components and provide more context for the analytics reports housed here.</p>
+<div class="nysds-hero-container ">
+    <div class="nysds-hero-information">
+        
+        
+            <h1 class="nysds-hero-title">NYS Digital Service Analytics Hub</h1>
+        
+        
+    </div>
+</div>
 
 
 
@@ -189,9 +224,9 @@
         
         <h3 class="stats-heading
              
-        "> Monthly Summary</h3>
+        "> March 2025 Monthly Summary</h3>
         
-        <p class="stats-intro">Users in the last 30 days. </p>
+        <p class="stats-intro">A monthly snapshot of website and search data to provide insight on how people interact with New York State government. </p>
         <ul class="stats-list">
             
             

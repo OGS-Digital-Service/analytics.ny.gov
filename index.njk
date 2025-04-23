@@ -4,24 +4,15 @@ title: NYS Digital Service Analytics Hub
 description: Selected analytics reports across new york state websites
 data: _overview
 ---
-{% from './_includes/_components.njk' import iframeLoader, card, stats with context %}
-<h1 class="mx-content"> {{title}} </h1>
-<p class="mx-content">Welcome! This is a work in progress, so please be patient as we update data sources, import addtional components and provide more context for the analytics reports housed here.</p>
-{# {{
-    card({
-        heading:"Cards",
-        intro:"some text",
-        cards:[
-            {
-                title:"Card title",
-                content:"some content",
-                link:"#",
-                image:"",
-                imagealt:""
-            }
-        ]
+{% from './_includes/_components.njk' import iframeLoader, card, hero, stats with context %}
+{{ hero({
+    title: "NYS Digital Service Analytics Hub",
+    description:"",
+    image:"",
+    headline:"",
+    date:""
     })
-}} #}
+}}
 
 {{
     stats({
@@ -29,8 +20,8 @@ data: _overview
         dataSource: _overview,
         percentCard: true,
         dateRange:"Mar 1 - Mar 31",
-        heading:"Monthly Summary",
-        intro:"Users in the last 30 days.",
+        heading:"March 2025 Monthly Summary",
+        intro:"A monthly snapshot of website and search data to provide insight on how people interact with New York State government.",
         ctalink:"",
         ctatext:"",
         color:"blue",
