@@ -3,14 +3,15 @@
     {% if params.image %}
     background-image: url('{{params.image}}');
     {% else %}
-    background: #457AA5;
+    background-color: #457AA5;
+    min-height: 275px;
     {% endif %}
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 </style>
-<div class="nysds-hero-container {% if params.image %} nysds-hero-background-image {%endif%}">
+<div class="nysds-hero-container nysds-hero-background-image ">
     <div class="nysds-hero-information">
         {% if params.date %}
             <p class="nysds-hero-date">{{params.date}}</p>

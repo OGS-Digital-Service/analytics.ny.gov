@@ -4,10 +4,17 @@ title: Google Search Analytics
 description: Selected analytics reports across new york state websites
 permalink: "google-search/"
 ---
-{% from '../_includes/_components.njk' import iframeLoader %}
-<h1 class="mx-content"> {{title}} </h1>
+{% from '../_includes/_components.njk' import iframeLoader,hero %}
+{{ hero({
+    title: " Google Search Analytics",
+    description:"Data for searches performed via Google that were recorded through the Google Search Console and Analytics.",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
 
-<p class="mx-content">The first set of data are the top terms that users type into the universal navigation search that is on top of every New York State website. Note that these are case sensitive so there could be (and likely are) multiple versions of one term. For example: 1099, 1099g, 1099G, 1099 G. But the top 10 list here will just show the most popular search version of a term, not a total of all versions. The second set of data are the top terms that users type into the new services search field on ny.gov/services.</p>
+<p class="mx-paragraph">Find the top search terms this month for the ny.gov, governor.ny.gov and Critical State Service Provider (CSSP) websites. These are the phrases or keywords a user enters on google and selects a NYS website from the search results.</p>
 {{
     iframeLoader({
         url:"https://lookerstudio.google.com/embed/reporting/d28d5a87-9997-4fcf-8ff7-40fdd472078a/page/p_h4l1qbviqd",

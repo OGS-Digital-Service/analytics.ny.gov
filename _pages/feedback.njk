@@ -4,10 +4,16 @@ title: Feedback Data
 description: Selected analytics reports across new york state websites
 permalink: "feedback/"
 ---
-{% from '../_includes/_components.njk' import iframeLoader %}
-<h1 class="mx-content"> {{title}} </h1>
-
-
+{% from '../_includes/_components.njk' import iframeLoader, hero %}
+{{ hero({
+    title: "User Feedback",
+    description:"Feedback is collected on the ny.gov website on all service pages and select program pages.",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
+<p class="mx-paragraph">Users are asked to provide a thumbs up or thumbs down rating and then given an option to rate their online experience 1-10 (not at all satisfied to extremely satisfied) and provide any feedback or suggestions.</p>
 {{
     iframeLoader({
         url:"https://lookerstudio.google.com/embed/reporting/78a3d746-86f1-4dde-a7a5-48aadad3bd61/page/p_gbn4dexhqd",

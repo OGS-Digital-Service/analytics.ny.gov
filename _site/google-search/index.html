@@ -36,11 +36,19 @@
         margin-left:35px;
         margin-right:35px;
     }
+    .mx-paragraph {
+        max-width: 1160px;
+        margin: 30px 35px;
+    }
     @media (min-width: 1024px) {
         .mx-content {
-            margin-left:60px;
-            margin-right:60px;
+            margin-left:90px;
+            margin-right:90px;
         }
+        .mx-paragraph {
+        max-width: 1160px;
+        margin: 30px auto;
+    }
     }
 </style>
     
@@ -205,9 +213,31 @@
 </nav> 
     <main class="nysds-main" id="main-site-content-for-skiplink" >
     
-<h1 class="mx-content"> Google Search Analytics </h1>
+<style>
+.nysds-hero-background-image {
+    
+    background-color: #457AA5;
+    min-height: 275px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+</style>
+<div class="nysds-hero-container nysds-hero-background-image ">
+    <div class="nysds-hero-information">
+        
+        
+            <h2 class="nysds-hero-title"> Google Search Analytics</h2>
+        
+            <p class="nysds-hero-description">Data for searches performed via Google that were recorded through the Google Search Console and Analytics.</p>
+        
+        
+    </div>
+</div>
 
-<p class="mx-content">The first set of data are the top terms that users type into the universal navigation search that is on top of every New York State website. Note that these are case sensitive so there could be (and likely are) multiple versions of one term. For example: 1099, 1099g, 1099G, 1099 G. But the top 10 list here will just show the most popular search version of a term, not a total of all versions. The second set of data are the top terms that users type into the new services search field on ny.gov/services.</p>
+
+<p class="mx-paragraph">Find the top search terms this month for the ny.gov, governor.ny.gov and Critical State Service Provider (CSSP) websites. These are the phrases or keywords a user enters on google and selects a NYS website from the search results.</p>
 
 <div class="nysds-iframe-wrapper">
     <iframe 

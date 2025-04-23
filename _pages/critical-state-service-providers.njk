@@ -4,10 +4,28 @@ title: Critical State Service Providers
 description: Selected analytics reports for critical state service providers
 permalink: "critical-state-service-providers/"
 ---
-{% from '../_includes/_components.njk' import iframeLoader %}
-<h1 class="mx-content"> {{title}} </h1>
+{% from '../_includes/_components.njk' import iframeLoader, hero %}
 
-<p class="mx-content">Here are the basic stats for each Critical State Service Provider (CSSP) website, including total users, mobile users, and top trafficked pages.</p>
+{{ hero({
+    title: "Critical State Service Providers",
+    description:"Here are the basic stats for each Critical State Service Provider (CSSP) website, including total users, mobile users, and top trafficked pages.",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
+
+<section class="mx-content">
+    <h2> Direct links to expanded Critical State Service Provider Reports </h2>
+    <ul>
+        <li><a href="https://lookerstudio.google.com/reporting/ba307f1f-1543-41bb-9404-bc83b9fcdaab">Department of Health</a></li>
+        <li><a href="https://lookerstudio.google.com/reporting/cc5d3962-c5de-4078-91d6-103af4e9924a">Department of Motor Vehicles</a></li>
+        <li><a href="https://lookerstudio.google.com/reporting/3c63fc86-0cff-4b8f-8c4e-c274985a2182">Department of Labor</a> </li>
+        <li><a href="https://lookerstudio.google.com/reporting/e273f0f5-f48d-4317-987e-db9a88a86db4">Office of Temporary and Disability Assistance</a> </li>
+        <li><a href="https://lookerstudio.google.com/reporting/0a08a9b0-4634-4798-94eb-05d71e94042e">Department of Taxation and Finance</a> </li>
+    </ul>
+</section>
+
 {{
     iframeLoader({
         url:"https://lookerstudio.google.com/embed/reporting/9a9b27c6-29f0-4910-9eb7-c8da9eeb4636/page/p_bydmyjuiqd",
