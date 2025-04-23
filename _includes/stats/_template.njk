@@ -1,8 +1,8 @@
 {% if params.data === true %}
 {%set statsData = params.dataSource %} {# this sets the stats data loop to the datasource set in the component#}
 
-{% if params.percentCard %}{# percent card  #}
-    <div class="stats">
+{% if params.percentCard %}
+    <div class="stats">{# percent card  ----------------------------------------------------------------------------- #}
         {% if params.heading %}
         <h3 class="stats-heading
             {% if params.subhead === true %} stats-subhead {% endif %} 
@@ -16,7 +16,9 @@
                             {% if params.color === "blue" %} stats-blue {% endif %} 
                             {% if params.color === "gray" %} stats-gray {% endif %} 
                             ">
-                    
+                   
+
+
                     {% if data.category %}
                     <h4 class="stats-the
                             {% if params.color === "blue" %} stats-the-blue {% endif %} 
@@ -36,13 +38,16 @@
                             ">
                         {% if data.change === "up" %}
                             <span class="nysds-font-md stats-green"><i class="fas fa-arrow-up"></i></span>
-                            <span class="nysds-font-md">  {{data.percent}} <br> <span class="nysds-font-sm nysds-font-italic">vs. previous month</span></span>
+                            <span class="nysds-font-md">  {{data.percent}}</span>
                             
                         {% else %}
                             <span class=" nysds-font-md stats-red"><i class="fas fa-arrow-down"></i></span>
-                            <span class="nysds-font-md "> {{data.percent}} <br> <span class="nysds-font-sm nysds-font-italic">vs. previous month</span></span>
+                            <span class="nysds-font-md "> {{data.percent}}</span>
                         {% endif %}
                     </div>
+                    {% if params.dateRange %}
+                        <span class="stats-date-range"><i class="far fa-calendar"></i> {{params.dateRange}}</span>
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>
@@ -52,7 +57,7 @@
         {% if params.ctatext %}
             <a href="{{params.ctalink}}" class="stats-cta"> {{params.ctatext}} </a>
         {% endif %} 
-    </div>
+    </div>{# percent card  ------------------------------------------------------------------------------------------------------ #}
 
 
 {% else %}{# regular data card #}
