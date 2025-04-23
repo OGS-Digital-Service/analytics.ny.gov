@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: NYS Search Analytics
+description: Selected analytics reports across new york state websites
+permalink: "nys-search/"
+---
+{% from '../_includes/_components.njk' import iframeLoader %}
+<h1 class="mx-content"> {{title}} </h1>
+
+<p class="mx-content">The first set of data are the top terms that users type into the universal navigation search that is on top of every New York State website. Note that these are case sensitive so there could be (and likely are) multiple versions of one term. For example: 1099, 1099g, 1099G, 1099 G. But the top 10 list here will just show the most popular search version of a term, not a total of all versions. The second set of data are the top terms that users type into the new services search field on ny.gov/services.</p>
+{{
+    iframeLoader({
+        url:"https://lookerstudio.google.com/embed/reporting/0bdd909a-b677-40ec-96ab-1117c19a947d/page/p_giovzwsqqd",
+        title:"search analytics report"
+    })
+}}

@@ -37,4 +37,28 @@ data: _overview
 }}
 
 
-<i class="fas fa-percent"></i>
+{{
+    stats({
+        data: false,
+        dataSource: null,
+        heading:"User Feedback",
+        intro:"",
+        ctalink:"",
+        ctatext:"",
+        color:"blue",
+        cards:[
+            {
+                icon:'',
+                stat:"3,412",
+                description:"Thumbs Up",
+                color:"blue"
+            },
+            {
+                icon:'',
+                stat:"10,769",
+                description:"Thumbs Down",
+                color:"blue"
+            }
+        ]
+    })
+}}

@@ -3,7 +3,8 @@
 .stats {
     display: flex;
     flex-direction: column;
-    margin: 30px 0px;
+    margin: 30px auto;
+    max-width: 80%;
 }
 
 .stats-heading {
@@ -49,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 10px 5px;
     border-radius: 15px;
     margin: 10px;
     text-align: center;
@@ -124,7 +125,6 @@
     margin: 5px;
     padding: 10px;
     color: #000;
-
 }
 
 .stats-description {
@@ -137,15 +137,13 @@
     font-family: Oswald;
 }
 
-
-
 /* media queries */
 @media (min-width: 1024px) {
     .stats-list {
         flex-direction: row;
     }
 
-    .stats-card {
-        width: 23%;
-    }
+    /* .stats-card {
+        width: 25%;
+    } */
 }

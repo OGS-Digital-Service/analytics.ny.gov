@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search Analytics">
+    <meta name="description" content="NYS Search Analytics">
     <meta name="generator" content="11ty/eleventy">    
     <meta property="og:url" content="https://">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Search Analytics">
+    <meta property="og:title" content="NYS Search Analytics">
     <meta property="og:description" content="Selected analytics reports across new york state websites">
     <link href="/css/normalize.css" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
@@ -29,6 +29,8 @@
     }
     p {
         line-height: 1.5em;
+        max-width: 1160px;
+        margin: 0 auto;
     }
     .mx-content {
         margin-top: revert;
@@ -45,7 +47,7 @@
 </style>
     
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Search Analytics</title>
+    <title>NYS Search Analytics</title>
   </head>
   <body class="">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only nysds-a11y-skiplink">Skip to Main Content</a>
@@ -107,7 +109,7 @@
                     >
                     
                         <a href="/governor" class="nysds-global-link">
-                            governor.ny.gov
+                            Governor.ny.gov
                         </a>
                     
                 </li>
@@ -119,7 +121,7 @@
                     >
                     
                         <a href="/nygov" class="nysds-global-link">
-                            ny.gov
+                            NY.gov
                         </a>
                     
                 </li>
@@ -142,8 +144,20 @@
                             }"
                     >
                     
-                        <a href="/search" class="nysds-global-link">
-                            Search
+                        <a href="/nys-search" class="nysds-global-link">
+                            NYS Search
+                        </a>
+                    
+                </li>
+            
+                <li class="nysds-global-list-item"
+                    x-data="{
+                                dropdown: false
+                            }"
+                    >
+                    
+                        <a href="/google-search" class="nysds-global-link">
+                            Google Search
                         </a>
                     
                 </li>
@@ -165,7 +179,7 @@
 </nav> 
     <main class="nysds-main" id="main-site-content-for-skiplink" >
     
-<h1 class="mx-content"> Search Analytics </h1>
+<h1 class="mx-content"> NYS Search Analytics </h1>
 
 <p class="mx-content">The first set of data are the top terms that users type into the universal navigation search that is on top of every New York State website. Note that these are case sensitive so there could be (and likely are) multiple versions of one term. For example: 1099, 1099g, 1099G, 1099 G. But the top 10 list here will just show the most popular search version of a term, not a total of all versions. The second set of data are the top terms that users type into the new services search field on ny.gov/services.</p>
 
