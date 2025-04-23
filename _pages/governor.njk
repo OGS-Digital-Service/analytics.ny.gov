@@ -4,13 +4,27 @@ title: Governor.ny.gov Analytics
 description: Selected analytics reports across new york state websites
 permalink: "governor/"
 ---
-{% from '../_includes/_components.njk' import iframeLoader %}
-<h1 class="mx-content"> {{title}} </h1>
+{% from '../_includes/_components.njk' import iframeLoader, hero %}
+{{ hero({
+    title: "Governor.ny.gov Analytics ",
+    description:"Data for traffic on Governor.ny.gov",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
 
-<p class="mx-content"> Traffic increased slightly for the Governor’s site in February and mobile users jumped up 23%. There were several popular press releases with the top one being a Statement from GKH on charges filed against NYS related to immigration laws. The most popular page in February was the Governor’s contact form.</p>
+<p class="mx-paragraph"> Traffic to the Governor’s site dropped 24% in March compared to February. The most popular page was the Governor’s contact form. The most popular press release was the Governor warning New Yorkers about the E-Z Pass text message scam.</p>
 {{
     iframeLoader({
         url:"https://lookerstudio.google.com/embed/reporting/232b4b43-8acc-45f4-9ad2-0e856e25aa7b/page/xz48E",
         title:"Governor.ny.gov Analytics report"
     })
 }}
+
+<section class="mx-content">
+    <h2> Direct link to expanded Governor.ny.gov Report </h2>
+    <ul>
+        <li><a href="https://lookerstudio.google.com/reporting/06c0a384-fe20-44c8-a3bb-0fc41e539cdc/page/kO7uB ">Governor.ny.gov Report</a></li>
+    </ul>
+</section>

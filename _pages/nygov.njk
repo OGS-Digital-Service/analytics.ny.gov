@@ -4,15 +4,29 @@ title: NY.gov Analytics
 description: Selected analytics reports across new york state websites
 permalink: "nygov/"
 ---
-{% from '../_includes/_components.njk' import iframeLoader %}
-<h1 class="mx-content"> {{title}} </h1>
+{% from '../_includes/_components.njk' import iframeLoader, hero %}
+{{ hero({
+    title: "NY.gov Analytics",
+    description:"Data for traffic on NY.gov",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
 
-<p class="mx-content"> Traffic dipped a little for ny.gov in February due to a general decrease in traffic to the services pages. Apply for SNAP was the top service page followed by Get Unemployment Assistance, Pay a Traffic Violation in NYC, Get a my.ny.gov id, and Find an Incarcerated Individual.</p>
+<p class="mx-paragraph"> Traffic to ny.gov increased 19% in March compared to February. This is largely due to the new “We Want You” campaign to attract federal workers program page (64,966 users in March), and increased visits to the Safe Winter Driving program page (56,357 users - up 58% from February).
+<br>Top services were SNAP, Unemployment Insurance, Pay a Traffic Violation in NYC, Get a My ny.gov ID, and Renew a Vehicle Registration.
+</p>
 {{
     iframeLoader({
         url:"https://lookerstudio.google.com/embed/reporting/1e7f90db-1172-48b4-83dd-e0bc3558c2cf/page/p_gbn4dexhqd",
         title:"ny.gov analytics report"
     })
 }}
-
+<section class="mx-content">
+    <h2> Direct link to expanded NY.gov Report </h2>
+    <ul>
+        <li><a href="https://lookerstudio.google.com/reporting/b592a5f2-f7b2-4426-b991-5c2a176e1e44/page/kO7uB ">NY.gov Report</a></li>
+    </ul>
+</section>
 
