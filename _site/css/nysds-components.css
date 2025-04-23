@@ -786,15 +786,15 @@
     min-height: 125px;
     margin-top: 60px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-family: Proxima Nova, Arial, sans-serif;
+    padding:35px;
 }
 
 .nysds-footer-site-name {
     font-size: 1.25em;
     font-weight: bold;
     padding: 15px 0 15px 15px;
-    margin-left: 35px;
     font-family: 'D Sari Bold', Arial, sans-serif;
     display: flex;
     align-items: center;
@@ -803,6 +803,7 @@
 .nysds-footer-list {
     list-style-type: '';
     display: flex;
+    flex-direction: column;
     margin: 0 5px;
     padding: 0;
 }
@@ -838,5 +839,15 @@
         border-right: 2px solid #000;
         margin: 0 10px 0 20px;
         display: flex;
+    }
+
+    .nysds-footer {
+        flex-direction: row;
+        align-items: center;
+        padding:0 60px;
+    }
+
+    .nysds-footer-list {
+        flex-direction: row;
     }
 }
