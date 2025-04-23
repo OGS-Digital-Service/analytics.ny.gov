@@ -787,27 +787,43 @@
     margin-top: 60px;
     display: flex;
     align-items: center;
+    font-family: Proxima Nova, Arial, sans-serif;
 }
 
 .nysds-footer-site-name {
     font-size: 1.25em;
     font-weight: bold;
-    padding: 15px;
-    margin: 0 35px;
+    padding: 15px 0 15px 15px;
+    margin-left: 35px;
     font-family: 'D Sari Bold', Arial, sans-serif;
     display: flex;
     align-items: center;
 }
 
+.nysds-footer-list {
+    list-style-type: '';
+    display: flex;
+    margin: 0 5px;
+    padding: 0;
+}
 .nysds-footer-links {
     color: #000;
-    border-bottom: 1px solid #000;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
     padding: 5px;
+    margin: 5px;
 } 
 
 .nysds-footer-links:hover {
-    border-bottom: 3px solid #000;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+.nysds-footer-links:focus {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    outline: 2px solid var(--primary-core-blue);
 }
 
 .nysds-footer-separator {
@@ -820,7 +836,7 @@
     .nysds-footer-separator {
         height: 35px;
         border-right: 2px solid #000;
-        margin: 0 15px;
+        margin: 0 10px 0 20px;
         display: flex;
     }
 }
