@@ -48,7 +48,7 @@ permalink: "governor/"
 
 <div style="width: 300px; height: 300px;">
 
-<table class="charts-css column show-labels show-heading" id="column-chart"
+<table class="charts-css pie show-labels show-heading data-end" id="pie-chart"
     aria-label="Governor.ny.gov traffic by device: Mobile 47%, Desktop 53%, Tablet 2%"> 
     <caption><b>Governor.ny.gov Traffic by Device Users</b></caption>
      <thead>
@@ -60,20 +60,29 @@ permalink: "governor/"
      <tbody>
        <tr>
         <th scope="row">Mobile</th>
-        <td style="--size: 0.91;">190,947</td>
+        <td style="--start: 0;; --end: 0.47;"></td>
         </tr>
         <tr>
         <th scope="row">Desktop</th>
-        <td style="--size: 1.0">209,879</td>
+        <td style="--start: 0.47; --end: 0.98;"></td>
         </tr>
         <tr>
         <th scope="row">Tablet</th>
-        <td style="--size: 0.029;">6,011</td>
+        <td style="--start: 0.98; --end: 1.0;"></td>
         </tr>
     </tbody>
+    
     </table>
 </div>
+<div style="width: 200px; height: 120px;">
+        <ul class="charts-css legend legend-rectangle">
+        <li><span style="background-color: #1f77b4;"></span>Mobile 190,947</li>
+        <li><span style="background-color: #ff7f0e;"></span>Desktop 209,879</li>
+        <li><span style="background-color: #2ca02c;"></span>Tablet 6,011</li>
+    </ul>
+    </div>
 </div>
+
 
 
 

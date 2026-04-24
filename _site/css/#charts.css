@@ -1,0 +1,59 @@
+/* ===== Root Color Variables ===== */
+:root {
+  --color-mobile: #4e79a7;
+  --color-desktop: #fd7e14;
+  --color-tablet: #dc3545;
+}
+
+/* ===== Chart Slice Colors ===== */
+.mobile {
+  --color: var(--color-mobile);
+}
+
+.desktop {
+  --color: var(--color-desktop);
+}
+
+.tablet {
+  --color: var(--color-tablet);
+}
+
+/* ===== Legend Styling ===== */
+.charts-css.legend {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.charts-css.legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Legend color shape */
+.charts-css.legend li span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+}
+
+/* Match legend colors to chart */
+.legend .mobile span {
+  background-color: var(--color-mobile);
+}
+
+.legend .desktop span {
+  background-color: var(--color-desktop);
+}
+
+.legend .tablet span {
+  background-color: var(--color-tablet);
+}
+
+/* Optional: rhombus shape tweak (Chart.css uses transform) */
+.legend-rhombus li span {
+  transform: rotate(45deg);
+}
