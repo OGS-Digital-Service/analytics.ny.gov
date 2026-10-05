@@ -1,56 +1,56 @@
 [
-  {
-    "category": "NY.gov",
-    "users": "1,379,581",
-    "percent": "0.70%",
-    "change": "down"
-  },
-  {
-    "category": "Governor",
-    "users": "454,978",
-    "percent": "12.70%",
-    "change": "up"
-  },
-  {
-    "category": "Department of Health",
-    "users": "1,345,981",
-    "percent": "0.10%",
-    "change": "down"
-  },
-  {
-    "category": "Department of Motor Vehicles",
-    "users": "5,806,545",
-    "percent": "29.10%",
-    "change": "down"
-  },
-  {
-    "category": "Department of Labor",
-    "users": "761,527",
-    "percent": "6.10%",
-    "change": "up"
-  },
-  {
-    "category": "Office of Temporary and Disability Assistance",
-    "users": "278,992",
-    "percent": "12.30%",
-    "change": "down"
-  },
-  {
-    "category": "Department of Taxation and Finance",
-    "users": "971,494",
-    "percent": "22.80%",
-    "change": "down"
-  },
-  {
-    "category": "NY State of Health",
-    "users": "805,668",
-    "percent": "4.00%",
-    "change": "down"
-  },
-  {
-    "category": "Office of General Services",
-    "users": "88,974",
-    "percent": "6.40%",
-    "change": "up"
-  }
+    {
+        "category": "NY.gov",
+        "users": "1,438,664",
+        "percent": "4.00%",
+        "change": "up"
+    },
+    {
+        "category": "Governor",
+        "users": "491,758",
+        "percent": "38.80%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Health",
+        "users": "1,598,826",
+        "percent": "17.80%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Motor Vehicles",
+        "users": "2,764,511",
+        "percent": "5.00%",
+        "change": "down"
+    },
+    {
+        "category": "Department of Labor",
+        "users": "737,462",
+        "percent": "5.00%",
+        "change": "down"
+    },
+    {
+        "category": "Office of Temporary and Disability Assistance",
+        "users": "311,463",
+        "percent": "0.90%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Taxation and Finance",
+        "users": "1,660,238",
+        "percent": "68.10%",
+        "change": "up"
+    },
+    {
+        "category": "NY State of Health",
+        "users": "785,832",
+        "percent": "3.30%",
+        "change": "up"
+    },
+    {
+        "category": "Office of General Services",
+        "users": "70,053",
+        "percent": "25.60%",
+        "change": "up"
+    }
 ]
