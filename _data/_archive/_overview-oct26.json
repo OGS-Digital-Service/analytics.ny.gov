@@ -1,0 +1,56 @@
+[
+    {
+        "category": "NY.gov",
+        "users": "1,431,010",
+        "percent": "0.50%",
+        "change": "down"
+    },
+    {
+        "category": "Governor",
+        "users": "499,227",
+        "percent": "1.50%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Health",
+        "users": "1,362,761",
+        "percent": "14.80%",
+        "change": "down"
+    },
+    {
+        "category": "Department of Motor Vehicles",
+        "users": "2,859,069",
+        "percent": "3.40%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Labor",
+        "users": "790,433",
+        "percent": "7.20%",
+        "change": "up"
+    },
+    {
+        "category": "Office of Temporary and Disability Assistance",
+        "users": "335,584",
+        "percent": "7.70%",
+        "change": "up"
+    },
+    {
+        "category": "Department of Taxation and Finance",
+        "users": "1,127,613",
+        "percent": "32.10%",
+        "change": "down"
+    },
+    {
+        "category": "NY State of Health",
+        "users": "855,093",
+        "percent": "8.80%",
+        "change": "up"
+    },
+    {
+        "category": "Office of General Services",
+        "users": "87,292",
+        "percent": "0.80%",
+        "change": "down"
+    }
+]
